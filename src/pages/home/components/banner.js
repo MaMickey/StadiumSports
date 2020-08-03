@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
-import Slider from 'react-slick';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { SliderImg } from '../style';
- 
-class Banner extends Component {
-    render(){
-        return (
-        <Slider>
-            <SliderImg>page1</SliderImg>
-            <SliderImg>page2</SliderImg>
-        </Slider >
-        )
-    }
-}
-export default Banner;
+import 'swiper/swiper-bundle.css';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
+export default () => {
+  return (
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+    >
+      <SwiperSlide><SliderImg className="Img1"/></SwiperSlide>
+      <SwiperSlide><SliderImg className="Img2"/></SwiperSlide>
+      <SwiperSlide><SliderImg className="Img3"/></SwiperSlide>
+      <SwiperSlide><SliderImg className="Img4"/></SwiperSlide>
+    </Swiper>
+  );
+};
