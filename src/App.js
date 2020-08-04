@@ -1,5 +1,7 @@
 import React from 'react';
-import Header from './comment/header';
+import './iconfont/iconfont.css'
+import './iconfont/iconfont.js'
+import Header from './common/header';
 import Home from './pages/home';
 
 function App() {

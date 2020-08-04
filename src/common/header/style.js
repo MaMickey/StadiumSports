@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
-    z-index:1;
-    position: relative;
+    z-index:100;
+    position: fixed;
+    top: 0;
     height: 56px;
+    width: 100%;
+    background-color:#fff;
     border-bottom:1px solid #f0f0f0; 
 `;
 export const Logo = styled.div`
@@ -23,7 +26,6 @@ export const Logo = styled.div`
 export const Nav = styled.div`
     width:960px;
     height: 100%;
-    padding-right:90px;
     box-sizing:border-box;
     margin:0 auto;
 `;
@@ -47,23 +49,25 @@ export const NavItem = styled.div`
 export const SearchWrapper = styled.div`
     position: relative;
     float:left;
-    margin:0 50px 0 20px;
+    border:2px solid #eee;
+    background:#eee;
+    width:260px;
+    height:38px;
+    padding:5px 30px 0 20px;
+    margin:10px 20px 10px 20px;
+    box-sizing:border-box;
+    border-radius: 4px;
 `;
 export const SearchBar = styled.input.attrs({
     placeholder:"Search"
 })`
-    width:260px;
-    height:38px;
-    padding:0 30px 0 20px;
-    margin-top:9px;
-    margin-left:20px;
-    box-sizing:border-box;
+    position:left;
     border:none;
     outline:none;
-    border-radius:2px;
     background:#eee;
     font-size:14px;
-    color:#666;
+    margin-left: 10px;
+    
     &::placeholder{
         color:#999;
     }

@@ -1,0 +1,37 @@
+{
+  "id": "1984502",
+  "name": "xinsports",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1391397",
+      "name": "卡车",
+      "font_class": "qiache",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "2402851",
+      "name": "满意",
+      "font_class": "manyi",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "1253742",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "3058268",
+      "name": "Shopping Cart",
+      "font_class": "ShoppingCart",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}

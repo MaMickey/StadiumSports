@@ -6,7 +6,12 @@ class products extends Component {
         return (
             <ProductWrapper>
                 <ProductItem className="left"/>
-                <ProductItem className="center"/>
+                <ProductItem className="center1"/>
+                <ProductItem className="center2"/>
+                <ProductItem className="right"/>
+                <ProductItem className="left"/>
+                <ProductItem className="center1"/>
+                <ProductItem className="center2"/>
                 <ProductItem className="right"/>
             </ProductWrapper>
         );
